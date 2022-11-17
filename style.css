@@ -275,6 +275,10 @@ td{
     padding: 10px 0 0 10px;
 }
 
+td a:hover{
+    color: var(--ahover);
+}
+
 table{
     padding-bottom: 1.5rem;   
 }
