@@ -369,8 +369,21 @@ table{
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
     }
+    .menutog:hover, .menuicon:hover{
+        cursor:pointer;
+    }
+
     .mobile-list{
         display:none;
+    }
+    .mobile-list a{
+        color: white;
+        font-size: 4rem;
+        text-align: top;
+    }
+
+    #menutog:checked ~ .mobile-list{
+        display:flex;
         flex-direction: column;
         justify-content: left;
         gap: 20px;
@@ -380,15 +393,6 @@ table{
         background-color: rgba(0, 0, 0, 0.415);
         height: 500vh;
         width: 800px;
-    }
-    .mobile-list a{
-        color: white;
-        font-size: 4rem;
-        text-align: top;
-    }
-
-    .menutog:checked ~ .mobile-list{
-        display:flex;
     }
 
     .semibod.index{
