@@ -12,8 +12,14 @@
 <body>
     <header>
         <a href="blog.html" class="uline">Blog</a>
-        <a href="/index.html"><img src="xicon.jpg" width="50px"></a>
+        <a href="/index.html" class="headerimg"><img src="xicon.jpg" width="50px"></a>
         <a href="/contact.html" class="uline">Contact</a>
+        <input type="checkbox" id="menutog"></input>
+        <label for="menutog" class="menutog"><div class="menuicon"></div></label>
+        <ul class="mobile-list">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
     </header>
     <div class="semibod index">
         <section class="index-article">
@@ -26,11 +32,13 @@
             <article>
                 <div class="index-h2-container"><h2>¿Qué estoy creando?</h2></div>
                 <ul class="index list">
-                    <li>Estudiando para mi examen de admisión :)</li>
-                    <li>Programando este blog.</li>
-                    <li>Grabando videos novedosos de megaminx.</li>
-                    <li>A punto de mudarme solo :D</li>
+                    <li>Aprendiendo JavaScript</li>
+                    <li>Programando este blog</li>
+                    <li>Esperando mi resultado de universidad</li>
+                    <li>Compilando una biblioteca útil para Ciencias de la Salud</li>
+                    <li>Escribiendo...</li>
                 </ul>
+                <a href="#" class="more">Portafolio...</a><br>
             </article>
         </section>
         
@@ -54,6 +62,7 @@
     <footer>
             <a href="/index.html"><small>Inicio</small></a>
             <a href="blog.html"><small>Blog</small></a>
+            <a href="portfolio.html"><small>Portafolio</small></a>
             <a href="contact.html"><small>Contacto</small></a>
     </footer>
 </body>

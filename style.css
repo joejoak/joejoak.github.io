@@ -90,6 +90,10 @@ footer a:hover{
     color: rgba(255, 255, 255, 0.686);
 }
 
+#menutog{
+    display:none;
+}
+
 /* Index styles */
 .semibod.index{
     display:grid;
@@ -279,6 +283,27 @@ td a:hover{
     color: var(--ahover);
 }
 
+.photo-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.photo-grid img{
+    width: 100%;
+}
+
+.grid1-text{
+    position:relative;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: fit-content;
+    height: fit-content;
+}
+
 table{
     padding-bottom: 1.5rem;   
 }
@@ -300,4 +325,78 @@ table{
 .blog-article ul, .index-article p{
     padding: 2rem;
 }
+.mobile-list{
+    display:none;
+}
 
+
+@media only screen and (max-device-width:700px){
+    footer{
+        display:none;
+    }
+    body{
+        background-size: 500vh 100vh;
+    }
+    .uline{
+        display:none;
+    }
+    header{
+        justify-content: space-between;
+        padding:2%;
+    }
+    header img{
+        width: 100px;
+    }
+    .semibod{
+        padding-top: 150px;
+    }
+    .menutog{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.759);
+        border-radius: 10px;
+        margin-right: 50px;
+    }
+    .menuicon{
+        display:block;
+        right: 10%;
+        width: 50px;
+        height: 10px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    .mobile-list{
+        display:none;
+        flex-direction: column;
+        justify-content: left;
+        gap: 20px;
+        position:absolute;
+        right: 0;
+        top: 150px;
+        background-color: rgba(0, 0, 0, 0.415);
+        height: 500vh;
+        width: 800px;
+    }
+    .mobile-list a{
+        color: white;
+        font-size: 4rem;
+        text-align: top;
+    }
+
+    .menutog:checked ~ .mobile-list{
+        display:flex;
+    }
+
+    .semibod.index{
+        gap: 200px;
+        padding-bottom: 200px;
+    }
+
+    .index-article{
+        transform: scale(1.2);
+    }
+} 
