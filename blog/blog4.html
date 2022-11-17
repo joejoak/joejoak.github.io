@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php echo($title)?> </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type= "x-icon" href= xicon.jpg >
+</head>
+<body>
+    <header>
+        <h1 class="title"> <a href="/">Blog de Joaquin</a></h1>
+        <section class="navbar">
+            <a href="/index.html">Inicio</a>
+            <a href="/blogposts.html">Blog Posts</a>
+            <a href="/contact.html">Contacto</a>
+        </section>
+        <section class="lang">
+            <a href="/index.html"><small>es</small></a>  <a href=""><small>eng</small></a>
+        </section>
+    </header>
+    <div class="semibod">
+        <div class="metadata">   
+            <h2 class="semititle"><?phpecho($title)?></h2>
+            <small><?phpecho($date)?></small>
+        </div>
+        <div class="article">
+            <p>
+                <br><br>
+            </p>
+            <a href="/blogposts.html" class="more">Bloglist</a>
+            <br>
+        </div>
+    </div>
+    <footer>
+        <section class="foot">
+            <a href="/index.html"><small>Inicio</small></a>
+            <a href="/contact.html"><small>Contacto</small></a>
+        </section>
+    </footer>
+</body>
+</html>
