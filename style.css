@@ -56,6 +56,7 @@ header a{
 
 body{
     background-image: linear-gradient(135deg,rgb(255,225,0),rgb(31 31 31),rgb(12 12 12),rgb(0 0 0));
+    background-size: 500vh 100vw;
 }
 
 .semibod{
@@ -166,6 +167,7 @@ footer a:hover{
     display:flex;
     justify-content: space-around;
     color:white;
+    font-size: 1.5rem;
 }
 
 .more:hover{
@@ -344,7 +346,9 @@ table{
         display:none;
     }
     body{
-        background-size: 500vh 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
     }
     .uline{
         display:none;
@@ -357,7 +361,7 @@ table{
         width: 100px;
     }
     .semibod{
-        padding-top: 150px;
+        padding-top: 200px;
     }
     .menutog{
         display:flex;
@@ -384,11 +388,16 @@ table{
 
     .mobile-list{
         display:none;
+        list-style: none;
     }
     .mobile-list a{
         color: white;
         font-size: 4rem;
         text-align: top;
+    }
+
+    .mobile-list li{
+        margin: 10px 0 10px 20px;
     }
 
     #menutog:checked ~ .mobile-list{
