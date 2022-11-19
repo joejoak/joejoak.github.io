@@ -101,6 +101,15 @@ footer a:hover{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.semibod.portafolio{
+    padding: 0;
+}
+
+.portafolio-img{
+    width: 200px;
+    height: 200px;
+    column-span: 2;
+}
 
 
 
@@ -179,6 +188,14 @@ footer a:hover{
 
 
 /* Bloglist */
+.contact.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+}
+
 .list-article{
     margin-top:30px;
     display: flex;
