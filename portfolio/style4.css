@@ -1,0 +1,135 @@
+*{
+    background-color: rgb(34, 34, 34);
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root{
+    --white: rgb(256 256 256);
+    --displace: 48px;
+    --cardbg: #134d2f;
+    --facebg: rgb(200 100 25);
+    --animationbg1: rgba(26, 26, 26, 0);
+    --animationbg2: rgba(26 26 26);
+}
+
+
+h3, .material-symbols-outlined{
+    background-color: var(--cardbg);
+    color: white;
+}
+.container{
+    position:absolute;
+    top:35%;
+    left:15%;
+    width: 70%;
+    height: 30%;
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    border-radius: 5%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card.one{
+    background-image: url(imgbuilding.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+.card.two{
+    background-image: url(imgmount.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+.card.three{
+    background-image: url(imgmoon.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(26, 26, 26, 0);
+    transition: ease-in-out 500ms;
+    position:absolute;
+    z-index: 3;
+    padding: 10px;
+}
+
+.card:hover{
+    cursor:pointer;
+}
+
+
+
+.card:hover a{
+    color: white;
+    background-color: rgb(26 26 26);
+    border: white solid 1px;
+}
+
+.card::after{
+    content: "";
+    display: block;
+    position: relative;
+    height: 1000px;
+    width: 100px;
+    transform: scale(2) rotate(-45deg) translateX(100%);
+    bottom: 40%;
+    left: 10%;
+    border: var(--white) solid 2px;
+    background-color: var(--animationbg2);
+}
+.card::before{
+    content: "";
+    display: block;
+    position: relative;
+    height: 1000px;
+    width: 100px;
+    transform: scale(2) rotate(-45deg) translateX(-100%);
+    top: 40%;
+    right: 10%;
+    border: var(--white) solid 2px;
+
+    background-color: var(--animationbg2);
+}
+
+.card.one::after, .card.one::before{
+    transition: transform ease-in-out 800ms;
+}
+
+.card.three::after, .card.three::before{
+    transition: transform ease-in-out 800ms;
+}
+
+.card.two::after, .card.two::before{
+    transition: transform ease-in-out 800ms;
+}
+
+.card.one:hover.card.one::after, .card.one:hover.card.one::before{
+    transform: scale(2) rotate(-45deg);
+}
+
+.card.two:hover.card.two::after, .card.two:hover.card.two::before{
+    transform: scale(2) rotate(-45deg);
+}
+
+.card.three:hover.card.three::after,.card.three:hover.card.three::before{
+    transform: scale(2) rotate(-45deg);
+}
