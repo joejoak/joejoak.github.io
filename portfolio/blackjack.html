@@ -10,6 +10,59 @@
         <button id="play-btn" class="btn" onclick="startGame()">START GAME</button>
         <button id="newcard-btn" class="btn" onclick="newCard()">NEW CARD</button>
         <p id="player-el"></p>
+
+        <input type="checkbox" id="dismiss"></input>
+        <div class="explanation">
+            <label for="dismiss" class="X">X</label>
+            <p class="textplanation">
+                Este es un juego de blackjack. Por el momento, lo que puedes hacer es sacar blackjack o no :)
+                </p>
+        </div>
+        <style>
+            #dismiss{
+                display:none;
+            }
+            #dismiss:checked ~ .explanation{
+                display:none;
+            }
+            .textplanation{
+                margin:10px;
+                margin-top: 30px;
+            }
+            .X{
+                margin:10px;
+                float: right;
+            }
+            .X:hover{
+                cursor:pointer;
+                color: gray;
+            }
+            .explanation{
+        background-color: #232323;
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+        position:absolute;
+        margin: 10px;
+        padding: 10px;
+        top: 0;
+        right: 0;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        right:0;
+        bottom:0;
+        margin: 20px;
+    }
+    a:hover{
+        color: gray;
+    }
+
+        </style>
+
+        <a href="../contact.html">Regresar a contacto</a>
         <script src="blackjack.js"></script>
     </body>
 </html>

@@ -12,6 +12,21 @@
     --animationbg2: rgba(26 26 26);
 }
 
+.return{
+    color:white;
+    text-decoration: none;
+    position: absolute;
+
+right:0;
+
+bottom:0;
+
+margin: 20px;
+}
+
+.return:hover{
+    color: gray;
+}
 
 h3, .material-symbols-outlined{
     background-color: var(--cardbg);
