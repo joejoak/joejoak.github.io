@@ -31,3 +31,9 @@ header{
     background-color: hsla(0,2%,8%,0.5);
     backdrop-filter: saturate(160%) blur(20px);
 }
+
+@media only screen and (max-width:700px){
+    body{
+        transform: scale(0.7);
+    }
+}
