@@ -18,6 +18,10 @@ header{
     justify-content: center;
 }
 
+.blogheader{
+    flex-direction: row;
+}
+
 a{
     text-decoration: none;
     color:rgb(182, 182, 182);
