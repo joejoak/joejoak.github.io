@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("bg.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 100%;
+    color:white;
+}
+#countdown{
+    font-weight: bold;
+    display: flex;
+    gap: 50px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+header{
+    width:100%;
+    margin:0;
+    text-align: center;
+    background-color: hsla(0,2%,8%,0.5);
+    backdrop-filter: saturate(160%) blur(20px);
+}
