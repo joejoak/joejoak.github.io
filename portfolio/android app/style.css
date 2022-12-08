@@ -1,0 +1,18 @@
+*{
+    font: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 40, 40);
+    
+}
+nav{
+    background-color: black;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    text-justify: center;
+    font-size: 50px;
+}
