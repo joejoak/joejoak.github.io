@@ -35,7 +35,7 @@ a:hover{
 #countdown{
     font-weight: bold;
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 p{
     display: flex;
@@ -43,7 +43,7 @@ p{
     text-align: center;
     width: 100px;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 header{
@@ -61,5 +61,8 @@ header{
         justify-content: center;
         text-align: center;
         gap:5px;
+    }
+    body{
+        background-position: top right;
     }
 }
