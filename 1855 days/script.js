@@ -1,4 +1,4 @@
-let myBirthday = "28 Feb 2025";
+let myBirthday = "28 Feb 2028";
 
 
 function countdown(){
@@ -13,12 +13,10 @@ function countdown(){
 
     const countdownEl = document.getElementById("countdown")
     countdownEl.innerHTML = `
-    <p>Days: <br>${parseInt(days)}</p>
-    <p>Hours: <br>${parseInt(hours)}</p> 
-    <p>Minutes: <br>${parseInt(minutes)}</p> 
-    <p>Seconds: <br>${parseInt(seconds)}</p>`
-
-
+    <p>D: <br>${parseInt(days)}</p>
+    <p>H: <br>${parseInt(hours)}</p> 
+    <p>M: <br>${parseInt(minutes)}</p> 
+    <p>S: <br>${parseInt(seconds)}</p>`
 }
 
 setInterval(countdown, 1000)
