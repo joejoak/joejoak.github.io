@@ -4,12 +4,17 @@
     font-family: 'Courier New', Courier, monospace;
     padding:0.1rem;
 }
-a{
-color: lightblue;
-font-size: 1.3rem;
-}
-a:hover{color:aqua}
 
 h1{
     color: gray
+}
+a {color: lightblue
+}
+a:hover{color:aqua}
+
+table, th, td {
+    border: 1px solid;
+}
+.bloglist table, .bloglist th, .bloglist td {
+border: none;
 }
