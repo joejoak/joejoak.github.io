@@ -14,7 +14,13 @@ a:hover{color:aqua}
 
 table, th, td {
     border: 1px solid;
+    border-collapse: collapse;
 }
+
+td{
+    padding: 4px;
+}
+
 .bloglist table, .bloglist th, .bloglist td {
 border: none;
 }
