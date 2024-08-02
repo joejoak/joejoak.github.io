@@ -60,3 +60,11 @@ MOVING SLIDER STARTS
 }
 
 /*MOVING SLIDER ENDS*/
+
+.single-image{
+    width: 90%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
