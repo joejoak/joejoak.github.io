@@ -1,5 +1,5 @@
 *{
-    background-color: black !important;
+    background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     padding:0.1rem;
@@ -68,7 +68,6 @@ CAROUSEL
 .carousel{
     scroll-snap-type: x mandatory;
     white-space: nowrap;
-    background: grey;
     position: relative;
 }
 
@@ -76,11 +75,17 @@ CAROUSEL
     display: inline-block;
     animation: 30s carousel infinite linear;
     overflow: hidden;
+    
+  animation-play-state: paused;
 }
 
 .carousel figure img {
     height: 300px;
     margin: 0 10px;
+}
+
+.carousel figure:hover{
+    animation-play-state: running;
 }
 
 @keyframes carousel{
@@ -90,22 +95,6 @@ CAROUSEL
     to{
         transform: translateX(-100%)
     }
-}
-
-.carousel:before,
-.carousel:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-
-
-.carousel:hover figure {
-  animation-play-state: paused;
 }
 
 /*continues normal code*/
