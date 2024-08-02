@@ -35,7 +35,7 @@ border: none;
 MOVING SLIDER STARTS
 */
 
-#slider{
+/* #slider{
     overflow: hidden;
 }
 #slider figure{
@@ -48,19 +48,51 @@ MOVING SLIDER STARTS
 
 #slider figure img {
     float: left;
-}
+} */
 
-@keyframes slider {
+/* @keyframes slider {
     0% {
         left: 0;
     }
     100%{
         left: -250%
     }
-}
+} */
 
 /*MOVING SLIDER ENDS*/
 
+/*
+CAROUSEL
+*/
+
+#carousel{
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    background: grey;
+    position: relative;
+}
+
+#carousel figure{
+    display: inline-block;
+    animation: 30s carousel infinite linear;
+    overflow: hidden;
+}
+
+#carousel figure img {
+    height: 300px;
+    margin: 0 10px;
+}
+
+@keyframes carousel{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+
+/*continues normal code*/
 .single-image{
     max-width: 70%;
     display: block;
