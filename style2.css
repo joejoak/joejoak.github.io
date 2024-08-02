@@ -5,6 +5,13 @@
     padding:0.1rem;
 }
 
+hr{
+    background-color: lightblue;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 0.5px;
+}
+
 body{
     padding: 5%;
     padding-left: 8%;
@@ -29,6 +36,10 @@ td{
 
 .bloglist table, .bloglist th, .bloglist td {
 border: none;
+}
+
+ul li{
+    margin-left: 20px;
 }
 
 /* 
@@ -89,6 +100,38 @@ CAROUSEL
 }
 
 @keyframes carousel{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+
+.carousel-r{
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carousel-r figure{
+    display: inline-block;
+    animation: 30s carouselr infinite linear;
+    overflow: hidden;
+    
+  animation-play-state: running;
+}
+
+.carousel-r figure img {
+    height: 300px;
+    margin: 0 10px;
+}
+
+.carousel-r figure:hover{
+    animation-play-state: paused;
+}
+
+@keyframes carouselr{
     from{
         transform: translateX(0)
     }
