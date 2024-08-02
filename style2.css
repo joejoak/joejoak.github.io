@@ -5,6 +5,12 @@
     padding:0.1rem;
 }
 
+body{
+    padding: 5%;
+    padding-left: 8%;
+    padding-top: 1%;
+}
+
 h1{
     color: gray
 }
@@ -24,3 +30,33 @@ td{
 .bloglist table, .bloglist th, .bloglist td {
 border: none;
 }
+
+/* 
+MOVING SLIDER STARTS
+*/
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position:relative;
+    width: 10000%;
+    margin:0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    100%{
+        left: -100%
+    }
+}
+
+/*MOVING SLIDER ENDS*/
