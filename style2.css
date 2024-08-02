@@ -65,20 +65,20 @@ MOVING SLIDER STARTS
 CAROUSEL
 */
 
-#carousel{
+.carousel{
     scroll-snap-type: x mandatory;
     white-space: nowrap;
     background: grey;
     position: relative;
 }
 
-#carousel figure{
+.carousel figure{
     display: inline-block;
     animation: 30s carousel infinite linear;
     overflow: hidden;
 }
 
-#carousel figure img {
+.carousel figure img {
     height: 300px;
     margin: 0 10px;
 }
@@ -90,6 +90,22 @@ CAROUSEL
     to{
         transform: translateX(-100%)
     }
+}
+
+.carousel:before,
+.carousel:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+
+
+.carousel:hover figure {
+  animation-play-state: paused;
 }
 
 /*continues normal code*/
