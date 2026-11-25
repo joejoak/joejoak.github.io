@@ -229,3 +229,115 @@ table a{
         font-size: 2rem;
     }
 }
+
+
+@media (min-width: 981px){
+    .show{
+        all:unset;
+    }
+    nav a{
+        width:fit-content;
+    }
+    .menuimg{
+        display:none;
+    }
+    nav img{
+        width: 100px;
+    }
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        margin-left: 10%;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+    }
+    .x{
+        display:none;
+    }
+    .semibod{
+        font-size: 1.1rem;
+        display: grid;
+        align-content: center;
+    }
+    .indexion p{
+        font-size: 1.2rem;
+    }
+    .bloglist table a, .bloglist table{
+        font-size: 2rem;
+    }
+}
+ 
+/* ==========================================================
+   RESPONSIVO
+   Solo se añaden reglas nuevas al final del archivo.
+   Todo lo anterior queda exactamente igual y el diseño de
+   escritorio (981px en adelante) no cambia.
+   ========================================================== */
+ 
+/* ---------- Tablets y móviles (hasta 980px) ---------- */
+@media (max-width: 980px){
+ 
+    /* Espacios que antes eran fijos y ahora escalan con la pantalla */
+    :root{
+        --pad-menu: clamp(1.5rem, 8vw, 5rem);   /* antes 5rem */
+        --pad-logo: clamp(1rem, 5vw, 3rem);     /* antes 3rem */
+    }
+ 
+    nav img{
+        padding: var(--pad-logo);
+    }
+ 
+    .menuimg{
+        padding: var(--pad-menu);
+    }
+ 
+    /* Menú desplegable: mantiene la misma relación con .menuimg */
+    .show{
+        font-size: clamp(1.6rem, 7vw, 3rem);    /* antes 3rem */
+        margin-top: calc(var(--pad-menu) + 20vw);
+        overflow-y: auto;                       /* si no cabe (móvil horizontal), se desplaza */
+    }
+ 
+    /* Márgenes laterales: antes 8rem fijos (256px entre los dos lados) */
+    section,
+    .semibod{
+        margin: 0 clamp(1rem, 6vw, 4rem);
+    }
+ 
+    .semibod{
+        min-width: 0;                           /* antes 35rem: causaba scroll horizontal en móvil */
+        font-size: clamp(1.1rem, 3.2vw, 1.6rem); /* antes 2rem */
+    }
+ 
+    .indexion p{
+        font-size: clamp(1.1rem, 3.2vw, 1.6rem); /* antes 2rem */
+    }
+ 
+    .entrada{
+        padding: clamp(1rem, 4vw, 32px);        /* antes 32px */
+    }
+ 
+    td, th{
+        padding: clamp(0.5rem, 2.5vw, 1rem);    /* antes 1rem */
+        overflow-wrap: anywhere;                /* palabras largas no rompen la tabla */
+    }
+ 
+    /* Las imágenes del contenido nunca superan el ancho de su contenedor */
+    section img,
+    .semibod img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+ 
+/* ---------- Móviles pequeños (hasta 600px) ---------- */
+@media (max-width: 600px){
+    .bloglist table{
+        max-width: 95%;                         /* antes 80% */
+    }
+}
